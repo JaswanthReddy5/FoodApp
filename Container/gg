@@ -1,0 +1,35 @@
+import {useEffect,useState} from "react";
+import Card from "./Card";
+import Shimmer from "./Shimmer";
+
+const CardContainer =()=>{
+        let [duplicateCards,setDuplicateCards]= useState([]);
+        async function setdata(){
+            let duplicate= await fetch('https://www.swiggy.com/dapi/restaurants/list/v5?lat=14.44840&lng=79.98880&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING');
+            let dup= await duplicate.json();
+            console.log(dup.data.cards[1].card.card.gridElements.infoWithStyle.restaurants);
+            setDuplicateCards(dup.data.cards[1].card.card.gridElements.infoWithStyle.restaurants);
+        }
+    
+    useEffect(()=>{
+        setdata();
+    },[]);
+    if(duplicateCards.length==0){
+       return <Shimmer/>
+    }
+
+    return (<div id="print" >
+        <div>
+            <h1>whats on your mind </h1>
+        </div>
+        <div className="const">
+        {duplicateCards.map(obj=>{
+            return <Card key={obj.info.id} {...obj.info}/>
+
+        })}
+        </div>
+    </div>)
+
+};
+
+https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.89960&lng=80.22090&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING

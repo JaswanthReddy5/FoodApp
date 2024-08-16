@@ -1,0 +1,28 @@
+{
+  "name": "zomato",
+  "version": "1.0.0",
+  "description": "kj",
+  "main": "Body.js",
+  "scripts": {
+    "test": "ready",
+    "start": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "lion"
+  },
+  "keywords": [
+    "gun"
+  ],
+  "author": "bullet",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.24.1"
+  }
+}

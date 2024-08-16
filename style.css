@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.image img {
+    width: 122px;
+    height: 100px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.elements {
+    display: flex;
+    gap: 20px;
+}
+
+.elements p {
+    text-transform: uppercase;
+}
+
+.image2 img {
+    width: 284px;
+    height: 210px;
+}
+
+.restaurantname {
+    text-transform: uppercase;
+}
+
+.Card-Container {
+    width: 284px;
+    height: 320px;
+    border: 1px solid black;
+    margin: 20px; /* Adjusted margin for better spacing */
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.Card-Container:hover {
+    transform: scale(1.1);
+}
+
+.item, .offer, .time {
+    color: gray;
+}
+
+.side {
+    display: flex;
+    flex-direction: column;
+}
+
+.bar {
+    height: 55px;
+    width: 326px;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2);
+}
+
+#bob {
+    width: 30px;
+    height: 54px;
+}
+
+.CardContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.const {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+}
+
+.shimmer {
+    width: 284px; 
+    height: 320px;
+    background-color: rgb(81, 83, 81);
+    margin: 20px; 
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    animation: shimmer 0.5s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -284px 0;
+    }
+    100% {
+        background-position: 284px 0;
+    }
+}
+.round_image img{
+    height: 10%;
+    width:10%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    
+}
+.shimmer-display{
+    display: flex;
+    justify-content: center;
+}
+.side-heading{
+    padding-left: 560px;
+}
+.search-bar{
+    padding-left: 550px;
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: red;
+    border-radius: 30px;
+    border: 3px solid red;
+}

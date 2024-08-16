@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.image img {
+  width: 122px;
+  height: 100px;
+}
+
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  display: flex;
+  box-shadow: 10px 10px 20px #0003;
+}
+
+.elements {
+  gap: 20px;
+  display: flex;
+}
+
+.elements p {
+  text-transform: uppercase;
+}
+
+.image2 img {
+  width: 284px;
+  height: 210px;
+}
+
+.restaurantname {
+  text-transform: uppercase;
+}
+
+.Card-Container {
+  cursor: pointer;
+  border: 1px solid #000;
+  width: 284px;
+  height: 320px;
+  margin: 20px;
+  transition: transform .3s;
+  box-shadow: 10px 10px 20px #0003;
+}
+
+.Card-Container:hover {
+  transform: scale(1.1);
+}
+
+.item, .offer, .time {
+  color: gray;
+}
+
+.side {
+  flex-direction: column;
+  display: flex;
+}
+
+.bar {
+  width: 326px;
+  height: 55px;
+  box-shadow: 5px 5px 7px #0003;
+}
+
+#bob {
+  width: 30px;
+  height: 54px;
+}
+
+.CardContainer {
+  justify-content: center;
+  display: flex;
+}
+
+.const {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  display: flex;
+}
+
+.shimmer {
+  background-color: #515351;
+  width: 284px;
+  height: 320px;
+  margin: 20px;
+  animation: .5s infinite shimmer;
+  box-shadow: 10px 10px 20px #0003;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -284px 0;
+  }
+
+  100% {
+    background-position: 284px 0;
+  }
+}
+
+.round_image img {
+  cursor: pointer;
+  width: 10%;
+  height: 10%;
+  transition: transform .3s;
+}
+
+.shimmer-display {
+  justify-content: center;
+  display: flex;
+}
+
+.side-heading {
+  padding-left: 560px;
+}
+
+.search-bar {
+  padding-left: 550px;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: red;
+  border: 3px solid red;
+  border-radius: 30px;
+}
+/*# sourceMappingURL=index.3a01df49.css.map */
