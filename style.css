@@ -33,7 +33,11 @@
 .restaurantname {
     text-transform: uppercase;
 }
-
+.CardContainer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
 .Card-Container {
     width: 284px;
     height: 320px;
@@ -68,16 +72,19 @@
     height: 54px;
 }
 
-.CardContainer {
-    display: flex;
-    justify-content: center;
-}
+
 
 .const {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px; 
+}
+
+.shimmer-display{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .shimmer {
@@ -104,10 +111,7 @@
     transition: transform 0.3s ease;
     
 }
-.shimmer-display{
-    display: flex;
-    justify-content: center;
-}
+
 .side-heading{
     padding-left: 560px;
 }
@@ -127,3 +131,15 @@
     border-radius: 30px;
     border: 3px solid red;
 }
+/* .card-colourglow{
+    margin: 0 auto;
+    padding: 2rem;
+    width: 290px; 
+    height: 330px;
+    background-color: red;
+    position: absolute;
+} */
+
+
+
+  

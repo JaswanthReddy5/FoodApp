@@ -22,18 +22,14 @@ const CardContainer =()=>{
             let round = await roundcards.json();
             
         }
-        <div>
-             
-        </div>
+       
     
     useEffect(()=>{
         setdata();
         rounddata();
     },[]);
 
-    if(duplicateCards.length==0){
-       return <ShimmerContainer/>
-    }
+  
 
     return (<div id="print" >
         <div>
@@ -67,7 +63,7 @@ const CardContainer =()=>{
             <h1 className="side-heading">Top restaurants in your Area</h1> 
         </div>
         <div className="const">
-        {duplicateCards.map(obj=>{
+        {duplicateCards.length==0?<ShimmerContainer/>:duplicateCards.map(obj=>{
             return <Card key={obj.info.id} {...obj.info}/>
 
         })}

@@ -7,6 +7,10 @@ const Card = ({
     avgRating,
 }) => {
     return (
+    <div className="main-div">
+        <div className="card-colourglow">
+
+            </div>
         <div className="Card-Container">
             <div className="image2">
                 <img src={`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${cloudinaryImageId}`} alt={name} />
@@ -21,6 +25,7 @@ const Card = ({
                 </div>
             </div>
         </div>
+    </div>
     );
 };
 

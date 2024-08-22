@@ -3021,8 +3021,7 @@ const ram = (0, _reactRouterDom.createBrowserRouter)([
                     lineNumber: 36,
                     columnNumber: 21
                 }, undefined)
-            },
-            {}
+            }
         ]
     }
 ]);
@@ -3031,7 +3030,7 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterP
     router: ram
 }, void 0, false, {
     fileName: "Body.js",
-    lineNumber: 46,
+    lineNumber: 44,
     columnNumber: 13
 }, undefined));
 var _c;
@@ -34641,20 +34640,10 @@ const CardContainer = ()=>{
         let roundcards = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.89960&lng=80.22090&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
         let round = await roundcards.json();
     }
-    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {}, void 0, false, {
-        fileName: "Container/CardContainer.js",
-        lineNumber: 25,
-        columnNumber: 9
-    }, undefined);
     (0, _react.useEffect)(()=>{
         setdata();
         rounddata();
     }, []);
-    if (duplicateCards.length == 0) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerContainerDefault.default), {}, void 0, false, {
-        fileName: "Container/CardContainer.js",
-        lineNumber: 35,
-        columnNumber: 15
-    }, undefined);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         id: "print",
         children: [
@@ -34668,7 +34657,7 @@ const CardContainer = ()=>{
                         children: "filter"
                     }, void 0, false, {
                         fileName: "Container/CardContainer.js",
-                        lineNumber: 40,
+                        lineNumber: 36,
                         columnNumber: 13
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -34678,13 +34667,13 @@ const CardContainer = ()=>{
                         children: "CLEAR FILTER"
                     }, void 0, false, {
                         fileName: "Container/CardContainer.js",
-                        lineNumber: 44,
+                        lineNumber: 40,
                         columnNumber: 13
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "Container/CardContainer.js",
-                lineNumber: 39,
+                lineNumber: 35,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34695,7 +34684,7 @@ const CardContainer = ()=>{
                         class: "fa-solid fa-magnifying-glass"
                     }, void 0, false, {
                         fileName: "Container/CardContainer.js",
-                        lineNumber: 49,
+                        lineNumber: 45,
                         columnNumber: 13
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -34707,7 +34696,7 @@ const CardContainer = ()=>{
                         }
                     }, void 0, false, {
                         fileName: "Container/CardContainer.js",
-                        lineNumber: 50,
+                        lineNumber: 46,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -34719,13 +34708,13 @@ const CardContainer = ()=>{
                         children: "search"
                     }, void 0, false, {
                         fileName: "Container/CardContainer.js",
-                        lineNumber: 54,
+                        lineNumber: 50,
                         columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "Container/CardContainer.js",
-                lineNumber: 48,
+                lineNumber: 44,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34733,24 +34722,24 @@ const CardContainer = ()=>{
                     children: "Hussle-Free meal delivered right to you"
                 }, void 0, false, {
                     fileName: "Container/CardContainer.js",
-                    lineNumber: 61,
+                    lineNumber: 57,
                     columnNumber: 17
                 }, undefined)
             }, void 0, false, {
                 fileName: "Container/CardContainer.js",
-                lineNumber: 60,
+                lineNumber: 56,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "rounding",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _smallcardDefault.default), {}, void 0, false, {
                     fileName: "Container/CardContainer.js",
-                    lineNumber: 64,
+                    lineNumber: 60,
                     columnNumber: 13
                 }, undefined)
             }, void 0, false, {
                 fileName: "Container/CardContainer.js",
-                lineNumber: 63,
+                lineNumber: 59,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34759,34 +34748,38 @@ const CardContainer = ()=>{
                     children: "Top restaurants in your Area"
                 }, void 0, false, {
                     fileName: "Container/CardContainer.js",
-                    lineNumber: 67,
+                    lineNumber: 63,
                     columnNumber: 13
                 }, undefined)
             }, void 0, false, {
                 fileName: "Container/CardContainer.js",
-                lineNumber: 66,
+                lineNumber: 62,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "const",
-                children: duplicateCards.map((obj)=>{
+                children: duplicateCards.length == 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerContainerDefault.default), {}, void 0, false, {
+                    fileName: "Container/CardContainer.js",
+                    lineNumber: 66,
+                    columnNumber: 35
+                }, undefined) : duplicateCards.map((obj)=>{
                     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cardDefault.default), {
                         ...obj.info
                     }, obj.info.id, false, {
                         fileName: "Container/CardContainer.js",
-                        lineNumber: 71,
+                        lineNumber: 67,
                         columnNumber: 20
                     }, undefined);
                 })
             }, void 0, false, {
                 fileName: "Container/CardContainer.js",
-                lineNumber: 69,
+                lineNumber: 65,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "Container/CardContainer.js",
-        lineNumber: 38,
+        lineNumber: 34,
         columnNumber: 13
     }, undefined);
 };
@@ -34813,86 +34806,102 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 const Card = ({ name, cuisines, costForTwo, areaName, cloudinaryImageId, avgRating })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "Card-Container",
+        className: "main-div",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "image2",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                    src: `https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${cloudinaryImageId}`,
-                    alt: name
-                }, void 0, false, {
-                    fileName: "Container/Card.js",
-                    lineNumber: 12,
-                    columnNumber: 17
-                }, undefined)
+                className: "card-colourglow"
             }, void 0, false, {
                 fileName: "Container/Card.js",
                 lineNumber: 11,
-                columnNumber: 13
+                columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card-details",
+                className: "Card-Container",
                 children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        className: "restaurantname",
-                        children: name
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "image2",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            src: `https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${cloudinaryImageId}`,
+                            alt: name
+                        }, void 0, false, {
+                            fileName: "Container/Card.js",
+                            lineNumber: 16,
+                            columnNumber: 17
+                        }, undefined)
                     }, void 0, false, {
                         fileName: "Container/Card.js",
                         lineNumber: 15,
-                        columnNumber: 17
+                        columnNumber: 13
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "side",
+                        className: "card-details",
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                className: "item",
-                                children: cuisines.join(", ")
-                            }, void 0, false, {
-                                fileName: "Container/Card.js",
-                                lineNumber: 17,
-                                columnNumber: 21
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                className: "offer",
-                                children: costForTwo
-                            }, void 0, false, {
-                                fileName: "Container/Card.js",
-                                lineNumber: 18,
-                                columnNumber: 21
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                className: "time",
-                                children: areaName
+                                className: "restaurantname",
+                                children: name
                             }, void 0, false, {
                                 fileName: "Container/Card.js",
                                 lineNumber: 19,
-                                columnNumber: 21
+                                columnNumber: 17
                             }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                className: "rating",
-                                children: avgRating
-                            }, void 0, false, {
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "side",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        className: "item",
+                                        children: cuisines.join(", ")
+                                    }, void 0, false, {
+                                        fileName: "Container/Card.js",
+                                        lineNumber: 21,
+                                        columnNumber: 21
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        className: "offer",
+                                        children: costForTwo
+                                    }, void 0, false, {
+                                        fileName: "Container/Card.js",
+                                        lineNumber: 22,
+                                        columnNumber: 21
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        className: "time",
+                                        children: areaName
+                                    }, void 0, false, {
+                                        fileName: "Container/Card.js",
+                                        lineNumber: 23,
+                                        columnNumber: 21
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        className: "rating",
+                                        children: avgRating
+                                    }, void 0, false, {
+                                        fileName: "Container/Card.js",
+                                        lineNumber: 24,
+                                        columnNumber: 21
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
                                 fileName: "Container/Card.js",
                                 lineNumber: 20,
-                                columnNumber: 21
+                                columnNumber: 17
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "Container/Card.js",
-                        lineNumber: 16,
-                        columnNumber: 17
+                        lineNumber: 18,
+                        columnNumber: 13
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "Container/Card.js",
                 lineNumber: 14,
-                columnNumber: 13
+                columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "Container/Card.js",
         lineNumber: 10,
-        columnNumber: 9
+        columnNumber: 5
     }, undefined);
 };
 _c = Card;
@@ -35003,76 +35012,30 @@ var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$58ee.prelude(module);
 
 try {
+// ShimmerContainer.js
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _shimmer = require("./Shimmer");
 var _shimmerDefault = parcelHelpers.interopDefault(_shimmer);
-const ShimerContainer = ()=>{
+const ShimmerContainer = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "shimmer-display",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
-                fileName: "Container/ShimmerContainer.js",
-                lineNumber: 5,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
-                fileName: "Container/ShimmerContainer.js",
-                lineNumber: 6,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
-                fileName: "Container/ShimmerContainer.js",
-                lineNumber: 7,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
-                fileName: "Container/ShimmerContainer.js",
-                lineNumber: 8,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
-                fileName: "Container/ShimmerContainer.js",
-                lineNumber: 9,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
-                fileName: "Container/ShimmerContainer.js",
-                lineNumber: 10,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
-                fileName: "Container/ShimmerContainer.js",
-                lineNumber: 11,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
-                fileName: "Container/ShimmerContainer.js",
-                lineNumber: 12,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
-                fileName: "Container/ShimmerContainer.js",
-                lineNumber: 13,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
-                fileName: "Container/ShimmerContainer.js",
-                lineNumber: 14,
-                columnNumber: 9
-            }, undefined)
-        ]
-    }, void 0, true, {
+        children: Array(9).fill(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
+            fileName: "Container/ShimmerContainer.js",
+            lineNumber: 7,
+            columnNumber: 22
+        }, undefined))
+    }, void 0, false, {
         fileName: "Container/ShimmerContainer.js",
-        lineNumber: 4,
-        columnNumber: 12
+        lineNumber: 6,
+        columnNumber: 5
     }, undefined);
 };
-_c = ShimerContainer;
-exports.default = ShimerContainer;
+_c = ShimmerContainer;
+exports.default = ShimmerContainer;
 var _c;
-$RefreshReg$(_c, "ShimerContainer");
+$RefreshReg$(_c, "ShimmerContainer");
 
   $parcel$ReactRefreshHelpers$58ee.postlude(module);
 } finally {

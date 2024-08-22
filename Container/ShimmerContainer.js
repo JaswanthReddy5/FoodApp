@@ -1,17 +1,13 @@
- import Shimmer from "./Shimmer";
- 
- const ShimerContainer = ()=>{
-    return <div className="shimmer-display">
-        <Shimmer/>
-        <Shimmer/>
-        <Shimmer/>
-        <Shimmer/>
-        <Shimmer/>
-        <Shimmer/>
-        <Shimmer/>
-        <Shimmer/>
-        <Shimmer/>
-        <Shimmer/>
-           </div>
- }
- export default ShimerContainer;
+// ShimmerContainer.js
+import Shimmer from "./Shimmer";
+
+const ShimmerContainer = () => {
+  return (
+    <div className="shimmer-display">
+      {Array(9).fill(<Shimmer />)}
+    </div>
+    
+  );
+};
+
+export default ShimmerContainer;

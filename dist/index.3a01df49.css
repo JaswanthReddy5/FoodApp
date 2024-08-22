@@ -34,6 +34,12 @@
   text-transform: uppercase;
 }
 
+.CardContainer {
+  justify-content: center;
+  display: flex;
+  position: relative;
+}
+
 .Card-Container {
   cursor: pointer;
   border: 1px solid #000;
@@ -68,15 +74,16 @@
   height: 54px;
 }
 
-.CardContainer {
-  justify-content: center;
-  display: flex;
-}
-
 .const {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  display: flex;
+}
+
+.shimmer-display {
+  flex-wrap: wrap;
+  justify-content: center;
   display: flex;
 }
 
@@ -104,11 +111,6 @@
   width: 10%;
   height: 10%;
   transition: transform .3s;
-}
-
-.shimmer-display {
-  justify-content: center;
-  display: flex;
 }
 
 .side-heading {
