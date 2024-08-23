@@ -33,10 +33,10 @@ const CardContainer =()=>{
 
     return (<div id="print" >
         <div>
-            <button onClick={()=>{
+            <button class="custom-btn btn-16" onClick={()=>{
                 let filteredcards = cards.filter(obj=>obj.info.avgRating>=4.5)
                 setDuplicateCards(filteredcards)
-            }}>filter</button>
+            }}>FILTER</button>
             <button onClick={()=>{
               setDuplicateCards(cards)
             }}>CLEAR FILTER</button>

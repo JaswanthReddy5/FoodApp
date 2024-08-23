@@ -27490,7 +27490,29 @@ const Navbar = ()=>{
                             " ",
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                 to: "/",
-                                children: "Home"
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                    className: "custom-btn btn-12",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            children: "Click!"
+                                        }, void 0, false, {
+                                            fileName: "Container/Navbar.js",
+                                            lineNumber: 11,
+                                            columnNumber: 72
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            children: "HOME"
+                                        }, void 0, false, {
+                                            fileName: "Container/Navbar.js",
+                                            lineNumber: 11,
+                                            columnNumber: 91
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "Container/Navbar.js",
+                                    lineNumber: 11,
+                                    columnNumber: 34
+                                }, undefined)
                             }, void 0, false, {
                                 fileName: "Container/Navbar.js",
                                 lineNumber: 11,
@@ -27503,24 +27525,72 @@ const Navbar = ()=>{
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: [
-                            " ",
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                to: "/offers",
-                                children: "offers"
-                            }, void 0, false, {
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                            to: "/offers",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                className: "custom-btn btn-12",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        children: "Click!"
+                                    }, void 0, false, {
+                                        fileName: "Container/Navbar.js",
+                                        lineNumber: 12,
+                                        columnNumber: 77
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        children: "OFFERS"
+                                    }, void 0, false, {
+                                        fileName: "Container/Navbar.js",
+                                        lineNumber: 12,
+                                        columnNumber: 96
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
                                 fileName: "Container/Navbar.js",
                                 lineNumber: 12,
-                                columnNumber: 21
+                                columnNumber: 39
                             }, undefined)
-                        ]
-                    }, void 0, true, {
+                        }, void 0, false, {
+                            fileName: "Container/Navbar.js",
+                            lineNumber: 12,
+                            columnNumber: 20
+                        }, undefined)
+                    }, void 0, false, {
                         fileName: "Container/Navbar.js",
                         lineNumber: 12,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: "Cart"
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                            to: "",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                className: "custom-btn btn-12",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        children: "Click!"
+                                    }, void 0, false, {
+                                        fileName: "Container/Navbar.js",
+                                        lineNumber: 13,
+                                        columnNumber: 70
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        children: "CART"
+                                    }, void 0, false, {
+                                        fileName: "Container/Navbar.js",
+                                        lineNumber: 13,
+                                        columnNumber: 89
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "Container/Navbar.js",
+                                lineNumber: 13,
+                                columnNumber: 32
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "Container/Navbar.js",
+                            lineNumber: 13,
+                            columnNumber: 20
+                        }, undefined)
                     }, void 0, false, {
                         fileName: "Container/Navbar.js",
                         lineNumber: 13,
@@ -34650,11 +34720,12 @@ const CardContainer = ()=>{
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        class: "custom-btn btn-16",
                         onClick: ()=>{
                             let filteredcards = cards.filter((obj)=>obj.info.avgRating >= 4.5);
                             setDuplicateCards(filteredcards);
                         },
-                        children: "filter"
+                        children: "FILTER"
                     }, void 0, false, {
                         fileName: "Container/CardContainer.js",
                         lineNumber: 36,
@@ -34807,98 +34878,96 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 const Card = ({ name, cuisines, costForTwo, areaName, cloudinaryImageId, avgRating })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "main-div",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card-colourglow"
-            }, void 0, false, {
-                fileName: "Container/Card.js",
-                lineNumber: 11,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "Card-Container",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "image2",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            src: `https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${cloudinaryImageId}`,
-                            alt: name
-                        }, void 0, false, {
-                            fileName: "Container/Card.js",
-                            lineNumber: 16,
-                            columnNumber: 17
-                        }, undefined)
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "Card-Container",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "card-colourglow"
+                }, void 0, false, {
+                    fileName: "Container/Card.js",
+                    lineNumber: 12,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "image2",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        src: `https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${cloudinaryImageId}`,
+                        alt: name
                     }, void 0, false, {
                         fileName: "Container/Card.js",
-                        lineNumber: 15,
-                        columnNumber: 13
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "card-details",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                className: "restaurantname",
-                                children: name
-                            }, void 0, false, {
-                                fileName: "Container/Card.js",
-                                lineNumber: 19,
-                                columnNumber: 17
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "side",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                        className: "item",
-                                        children: cuisines.join(", ")
-                                    }, void 0, false, {
-                                        fileName: "Container/Card.js",
-                                        lineNumber: 21,
-                                        columnNumber: 21
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                        className: "offer",
-                                        children: costForTwo
-                                    }, void 0, false, {
-                                        fileName: "Container/Card.js",
-                                        lineNumber: 22,
-                                        columnNumber: 21
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                        className: "time",
-                                        children: areaName
-                                    }, void 0, false, {
-                                        fileName: "Container/Card.js",
-                                        lineNumber: 23,
-                                        columnNumber: 21
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                        className: "rating",
-                                        children: avgRating
-                                    }, void 0, false, {
-                                        fileName: "Container/Card.js",
-                                        lineNumber: 24,
-                                        columnNumber: 21
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "Container/Card.js",
-                                lineNumber: 20,
-                                columnNumber: 17
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "Container/Card.js",
-                        lineNumber: 18,
-                        columnNumber: 13
+                        lineNumber: 16,
+                        columnNumber: 17
                     }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "Container/Card.js",
-                lineNumber: 14,
-                columnNumber: 9
-            }, undefined)
-        ]
-    }, void 0, true, {
+                }, void 0, false, {
+                    fileName: "Container/Card.js",
+                    lineNumber: 15,
+                    columnNumber: 13
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "card-details",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            className: "restaurantname",
+                            children: name
+                        }, void 0, false, {
+                            fileName: "Container/Card.js",
+                            lineNumber: 19,
+                            columnNumber: 17
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "side",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    className: "item",
+                                    children: cuisines.join(", ")
+                                }, void 0, false, {
+                                    fileName: "Container/Card.js",
+                                    lineNumber: 21,
+                                    columnNumber: 21
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    className: "offer",
+                                    children: costForTwo
+                                }, void 0, false, {
+                                    fileName: "Container/Card.js",
+                                    lineNumber: 22,
+                                    columnNumber: 21
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    className: "time",
+                                    children: areaName
+                                }, void 0, false, {
+                                    fileName: "Container/Card.js",
+                                    lineNumber: 23,
+                                    columnNumber: 21
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    className: "rating",
+                                    children: avgRating
+                                }, void 0, false, {
+                                    fileName: "Container/Card.js",
+                                    lineNumber: 24,
+                                    columnNumber: 21
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "Container/Card.js",
+                            lineNumber: 20,
+                            columnNumber: 17
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "Container/Card.js",
+                    lineNumber: 18,
+                    columnNumber: 13
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "Container/Card.js",
+            lineNumber: 11,
+            columnNumber: 9
+        }, undefined)
+    }, void 0, false, {
         fileName: "Container/Card.js",
         lineNumber: 10,
         columnNumber: 5

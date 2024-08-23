@@ -8,9 +8,9 @@ const Navbar = () => {
                 <img src="https://png.pngtree.com/png-clipart/20230321/original/pngtree-food-business-logo-png-image_8998844.png" alt="" />
             </div>
             <div className="elements">
-                <p> <Link to='/'>Home</Link></p>
-                <p> <Link to='/offers'>offers</Link></p>
-                <p>Cart</p>               
+                <p> <Link to='/'><button className="custom-btn btn-12"><span>Click!</span><span>HOME</span></button></Link></p>
+                <p><Link to='/offers'><button className="custom-btn btn-12"><span>Click!</span><span>OFFERS</span></button></Link></p>
+                <p><Link to=''><button className="custom-btn btn-12"><span>Click!</span><span>CART</span></button></Link></p>               
             </div>
         </div>
     );
